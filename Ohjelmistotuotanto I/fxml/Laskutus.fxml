@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="511.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Cont">
+   <children>
+      <AnchorPane prefHeight="517.0" prefWidth="716.0">
+         <children>
+            <TextField fx:id="textfieldnimila" layoutX="14.0" layoutY="27.0" promptText="Nimi" />
+            <TextField fx:id="textfieldyhteyshenkilola" layoutX="14.0" layoutY="75.0" promptText="Yhteyshenkilö" />
+            <TextField fx:id="textfieldpuhelinnrola" layoutX="14.0" layoutY="124.0" promptText="Puhelinnumero" />
+            <TextField fx:id="textfieldosoitela" layoutX="14.0" layoutY="171.0" promptText="Osoite" />
+            <TextField fx:id="textfieldtunnusla" layoutX="180.0" layoutY="27.0" promptText="Tunnus" />
+            <TextField fx:id="textfieldvarausla" layoutX="180.0" layoutY="75.0" promptText="Varaustunnus" />
+            <Button layoutX="340.0" layoutY="75.0" mnemonicParsing="false" onAction="#haeVaraustunnusla" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Hae" textFill="WHITE" />
+            <TextField fx:id="textfieldsahkopostila" layoutX="180.0" layoutY="124.0" promptText="Sähköposti" />
+            <TextField fx:id="textfieldpostinrola" layoutX="14.0" layoutY="219.0" promptText="Postinumero" />
+            <TextField fx:id="textfieldpostitoimipaikkala" layoutX="180.0" layoutY="219.0" promptText="Postitoimipaikka" />
+            <TextField fx:id="textfieldalkupvmla" layoutX="14.0" layoutY="266.0" promptText="Alkupäivämäärä" />
+            <TextField fx:id="textfieldloppupvm" layoutX="180.0" layoutY="266.0" promptText="Loppupäivämäärä" />
+            <TextField fx:id="textfieldvarattutoimitilala" layoutX="14.0" layoutY="314.0" promptText="Varattu toimitila" />
+            <TextField fx:id="textfieldvaraushintala" layoutX="180.0" layoutY="314.0" promptText="Varaushinta" />
+            <Button layoutX="22.0" layoutY="410.0" mnemonicParsing="false" onAction="#tulostaLasku" prefHeight="35.0" prefWidth="73.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Tulosta" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="472.0" mnemonicParsing="false" onAction="#alkuvalikko" style="-fx-background-color: limegreen; -fx-border-color: black;" text="Alkuvalikko" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="6.0" text="Nimi" />
+            <Label layoutX="180.0" layoutY="6.0" text="Tunnus" />
+            <Label layoutX="13.0" layoutY="56.0" text="Yhteyshenkilö" />
+            <Label layoutX="186.0" layoutY="56.0" text="Varaustunnus" />
+            <Label layoutX="14.0" layoutY="107.0" text="Puhelinnumero" />
+            <Label layoutX="186.0" layoutY="107.0" text="Sähköposti" />
+            <Label layoutX="14.0" layoutY="154.0" text="Osoite" />
+            <Label layoutX="18.0" layoutY="202.0" text="Postinumero" />
+            <Label layoutX="186.0" layoutY="202.0" text="Postitoimipaikka" />
+            <Label layoutX="18.0" layoutY="247.0" text="Alkupäivämäärä" />
+            <Label layoutX="186.0" layoutY="247.0" text="Loppupäivämäärä" />
+            <Label layoutX="18.0" layoutY="297.0" text="Varattu toimitila" />
+            <Label layoutX="186.0" layoutY="297.0" text="Varaushinta" />
+            <ListView fx:id="lvlaskutuslp" layoutX="460.0" layoutY="37.0" prefHeight="318.0" prefWidth="231.0" />
+            <Label layoutX="460.0" layoutY="19.0" text="Varauksen laitteet ja palvelut" />
+            <CheckBox fx:id="checkboxsplasku" layoutX="181.0" layoutY="347.0" mnemonicParsing="false" text="Sähköpostilasku" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

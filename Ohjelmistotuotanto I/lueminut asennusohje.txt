@@ -1,0 +1,23 @@
+Asennusohje:
+1) IntellJ, luo JavaFX-projekti nimellä: demo6
+2) Paketin com.example.demo6 vie kaikki class tiedostot.
+3) Resources - com.example.demo6- vie scenet (.fxml) tiedostot
+
+
+MariaDB-clientin lisäys:
+1) Tee projektikansion juureen uusi kansio: lib, vie "mariadb-java-client-3.0.4.jar"-tiedosto kansioon.
+2) File - Project Structure - Modules - Dependencies. 
+Lisää + merkillä Jar or Directories, etsi lib kansiosta 
+kyseinen .jar tiedosto. Merkkaa valituksi, vaihda scope sarakkeesta Runtime - Apply.
+
+Lisää myös module-info.java tiedostoon projektissa koodirivi: requires java.sql;
+
+Tietokannan ajo:
+Aja "Tietokanta luonti ja tietojen asetus.sql" sisältämä tietokannan luonti koodi heidiSQL:ssä. Tämä luo tietokannan
+ja muutamia oletus arvoja.
+Mene Intellij ympäristöön ja muokkaa Tietokanta.java tiedostoon Tietokannan käyttäjätunnus ja salasana.
+
+
+Testailu: 
+Lisäile ohjelmassa lisää toimipisteitä, tiloja, sekä laitteitajapalveluita.
+Ja nauti testailuista

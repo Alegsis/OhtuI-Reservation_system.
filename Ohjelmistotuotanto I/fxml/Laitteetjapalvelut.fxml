@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="432.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Cont">
+   <children>
+      <AnchorPane prefHeight="438.0" prefWidth="610.0">
+         <children>
+            <TextField fx:id="textfieldlpToimipiste" layoutX="35.0" layoutY="34.0" promptText="Toimitila" />
+            <TextField fx:id="textfieldAktiivisuusLP" layoutX="196.0" layoutY="34.0" prefHeight="25.0" prefWidth="39.0" promptText="1/0" />
+            <TextField fx:id="textfieldlaitepalvelulp" layoutX="35.0" layoutY="93.0" promptText="Laite/Palvelu" />
+            <TextField fx:id="textfieldhintalp" layoutX="196.0" layoutY="93.0" promptText="Hinta" />
+            <TextArea fx:id="textareakuvauslp" layoutX="35.0" layoutY="142.0" prefHeight="199.0" prefWidth="313.0" promptText="Anna kuvaus laitteesta/palvelusta" />
+            <Button layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#lisaaLaiteJaPalvelu" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Lisää" textFill="WHITE" />
+            <Button layoutX="66.0" layoutY="358.0" mnemonicParsing="false" onAction="#muutaLaitePalvelu" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Muuta" textFill="WHITE" />
+            <Button layoutX="127.0" layoutY="358.0" mnemonicParsing="false" onAction="#haeLaitteetJaPalvelut" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Hae" textFill="WHITE" />
+            <Button layoutX="6.0" layoutY="397.0" mnemonicParsing="false" onAction="#alkuvalikko" style="-fx-background-color: limegreen; -fx-border-color: black;" text="Alkuvalikko" textFill="WHITE" />
+            <ListView fx:id="lvlaitteetjapalvelut" layoutX="377.0" layoutY="46.0" prefHeight="337.0" prefWidth="200.0" />
+            <Label layoutX="196.0" layoutY="76.0" text="Hinta" />
+            <Label layoutX="387.0" layoutY="23.0" text="Laitteet ja palvelut" />
+            <Label layoutX="35.0" layoutY="76.0" text="Laite/Palvelu" />
+            <Label layoutX="35.0" layoutY="125.0" text="Lisätiedot" />
+            <Label layoutX="39.0" layoutY="15.0" text="Toimitila" />
+            <Label layoutX="197.0" layoutY="15.0" text="Aktiivisuus" />
+         </children></AnchorPane>
+   </children>
+</VBox>

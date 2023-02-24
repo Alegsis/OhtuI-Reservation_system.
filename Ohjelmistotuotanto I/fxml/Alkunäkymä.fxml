@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Cont">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <Button layoutX="57.0" layoutY="82.0" mnemonicParsing="false" onAction="#asiakastiedot" prefHeight="96.0" prefWidth="223.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Asiakas- ja varausjärjestelmä" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="328.0" layoutY="82.0" mnemonicParsing="false" onAction="#toimipisteet" prefHeight="96.0" prefWidth="223.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Toimipisteet" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="57.0" layoutY="236.0" mnemonicParsing="false" onAction="#laitteetjapalvelut" prefHeight="96.0" prefWidth="223.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Laitteet ja palvelut" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="328.0" layoutY="236.0" mnemonicParsing="false" onAction="#raportointi" prefHeight="96.0" prefWidth="223.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Raportointi " textFill="#fffefe">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="57.0" layoutY="395.0" mnemonicParsing="false" onAction="#laskutus" prefHeight="96.0" prefWidth="223.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Laskutus" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="328.0" layoutY="395.0" mnemonicParsing="false" onAction="#sulje" prefHeight="96.0" prefWidth="223.0" style="-fx-background-color: tomato; -fx-border-color: black;" text="Sulje Ohjelma" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="700.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Cont">
+   <children>
+      <AnchorPane prefHeight="704.0" prefWidth="928.0">
+         <children>
+            <TextField fx:id="textfieldtoimipisteennimitp" layoutX="29.0" layoutY="76.0" promptText="Toimipisteen nimi" />
+            <Button fx:id="btnhaetoimipiste" layoutX="197.0" layoutY="76.0" mnemonicParsing="false" onAction="#toimipisteKysely" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Hae" textFill="WHITE" />
+            <TextField fx:id="textfieldkaupunkitp" layoutX="29.0" layoutY="121.0" promptText="Kaupunki" />
+            <TextField fx:id="textfieldosoitetp" layoutX="29.0" layoutY="167.0" promptText="Osoite" />
+            <TextField fx:id="textfieldpostinumerotp" layoutX="29.0" layoutY="218.0" promptText="Postinumero" />
+            <TextField fx:id="textfieldpostitoimipaikkatp" layoutX="29.0" layoutY="269.0" promptText="Postitoimipaikka" />
+            <TextField fx:id="textfieldtoimipisteAktiv" layoutX="191.0" layoutY="269.0" prefHeight="25.0" prefWidth="74.0" promptText="1/0" />
+            <Button fx:id="btnlisaatoimipiste" layoutX="29.0" layoutY="314.0" mnemonicParsing="false" onAction="#lisaaToimipiste" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Lisää" textFill="WHITE" />
+            <Button fx:id="btnmuutatoimipiste" layoutX="90.0" layoutY="314.0" mnemonicParsing="false" onAction="#muutaToimipiste" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Muuta" textFill="WHITE" />
+            <TextField fx:id="textfieldtoimitilapiste" layoutX="17.0" layoutY="436.0" promptText="Toimipiste" />
+            <TextField fx:id="textfieldtoimitilanimi" layoutX="15.0" layoutY="481.0" promptText="Toimitilan nimi" />
+            <Button fx:id="btnbtnhaetoimitila" layoutX="179.0" layoutY="481.0" mnemonicParsing="false" onAction="#toimitilaHaku" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Hae" textFill="WHITE" />
+            <TextField fx:id="textfieldhinta" layoutX="17.0" layoutY="523.0" promptText="Hinta" />
+            <TextField fx:id="textfieldhenkilomaara" layoutX="15.0" layoutY="565.0" promptText="Henkilömäärä" />
+            <TextField fx:id="textfieldtoimitilaAktiv" layoutX="179.0" layoutY="565.0" prefHeight="25.0" prefWidth="74.0" promptText="1/0" />
+            <Button fx:id="btnlisaatoimitila" layoutX="15.0" layoutY="601.0" mnemonicParsing="false" onAction="#lisaaToimitila" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Lisää" textFill="WHITE" />
+            <Button fx:id="btnmuutatoimitila" layoutX="64.0" layoutY="601.0" mnemonicParsing="false" onAction="#muutaToimitila" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Muuta" textFill="WHITE" />
+            <Button layoutX="601.0" layoutY="424.0" mnemonicParsing="false" onAction="#haeToimipisteetJaToimitilat" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Päivitä Toimipisteet ja -tilat" textFill="WHITE" />
+            <Button layoutX="20.0" layoutY="655.0" mnemonicParsing="false" onAction="#alkuvalikko" style="-fx-background-color: limegreen; -fx-border-color: black;" text="Alkuvalikko" textFill="WHITE" />
+            <ListView fx:id="lvtoimipiste" layoutX="456.0" layoutY="33.0" prefHeight="371.0" prefWidth="224.0" />
+            <ListView fx:id="lvtoimitilat" layoutX="681.0" layoutY="32.0" prefHeight="371.0" prefWidth="231.0" />
+            <Label layoutX="18.0" layoutY="388.0" prefHeight="31.0" prefWidth="107.0" text="Toimitilat">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="29.0" prefHeight="31.0" prefWidth="149.0" text="Toimipisteet">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="7.0" text="Toimipisteet">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="732.0" layoutY="7.0" text="Toimitilat">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="60.0" text="Toimipisteen nimi" />
+            <Label layoutX="31.0" layoutY="101.0" text="Kaupunki" />
+            <Label layoutX="36.0" layoutY="150.0" text="Osoite" />
+            <Label layoutX="36.0" layoutY="202.0" text="Postinumero" />
+            <Label layoutX="36.0" layoutY="252.0" text="Postitoimipaikka" />
+            <Label layoutX="18.0" layoutY="461.0" text="Toimitilan nimi" />
+            <Label layoutX="17.0" layoutY="506.0" text="Hinta" />
+            <Label layoutX="17.0" layoutY="548.0" text="Henkilömäärä" />
+            <Label layoutX="18.0" layoutY="416.0" prefHeight="17.0" prefWidth="68.0" text="Toimipiste" />
+            <Label layoutX="191.0" layoutY="252.0" text="Aktiivisuus" />
+            <Label layoutX="183.0" layoutY="548.0" text="Aktiivisuus" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

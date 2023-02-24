@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Cont">
+   <children>
+      <AnchorPane prefHeight="402.0" prefWidth="600.0">
+         <children>
+            <DatePicker fx:id="datepickalkupvmrp" layoutX="14.0" layoutY="21.0" prefHeight="29.0" prefWidth="170.0" />
+            <DatePicker fx:id="datepickloppupvmrp" layoutX="15.0" layoutY="66.0" prefHeight="29.0" prefWidth="170.0" />
+            <Button layoutX="204.0" layoutY="68.0" mnemonicParsing="false" onAction="#haeToimipisteet" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Hae" textFill="WHITE" />
+            <ListView fx:id="LVraportointi" layoutX="15.0" layoutY="133.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="btnluoraportti" layoutX="254.0" layoutY="194.0" mnemonicParsing="false" onAction="#luoRaportti" prefHeight="78.0" prefWidth="133.0" style="-fx-background-color: dodgerblue; -fx-border-color: black;" text="Luo raportti" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="368.0" mnemonicParsing="false" onAction="#alkuvalikko" style="-fx-background-color: limegreen; -fx-border-color: black;" text="Alkuvalikko" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="116.0" text="Toimipisteet" />
+            <Label layoutX="20.0" layoutY="6.0" text="Alkupäivämäärä" />
+            <Label layoutX="15.0" layoutY="50.0" text="Loppupäivämäärä" />
+         </children></AnchorPane>
+   </children>
+</VBox>
